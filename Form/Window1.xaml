@@ -1,0 +1,20 @@
+﻿<Window x:Class="E38EDM.TTD.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E38EDM.TTD" xmlns:helix="http://helix-toolkit.org/wpf"
+        mc:Ignorable="d"
+        Title="Revit 3D View" Height="597.335" Width="894.215" Icon="Trial Logo Design.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="101*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="39*"/>
+        </Grid.ColumnDefinitions>
+        <helix:HelixViewport3D x:Name="viewPort3d" ZoomExtentsWhenLoaded="true" Grid.RowSpan="1" Grid.ColumnSpan="3">
+            <helix:DefaultLights/>
+            <helix:GridLinesVisual3D Width="2000" Length="2000" Thickness="1" MinorDistance="100" MajorDistance="100" Fill="#FFB2B2B2"/>
+        </helix:HelixViewport3D>
+    </Grid>
+</Window>

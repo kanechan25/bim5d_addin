@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03D7B0E4-95F7-45FE-9A10-B6172BCE644D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyApplication</RootNamespace>
+    <AssemblyName>Bim5D</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.16.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.2.16.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="FoxLearn.License">
+      <HintPath>C:\Users\minht\Desktop\Lesson15\MyPch_Application\FoxLearn\FoxLearn.License\FoxLearn.License\bin\Debug\FoxLearn.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.57.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.1.57.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.57.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.Core.1.57.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.57.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.1.57.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="HelixToolkit, Version=2.20.2.0, Culture=neutral, PublicKeyToken=52aa3500039caf0d, processorArchitecture=MSIL">
+      <HintPath>packages\HelixToolkit.2.20.2\lib\netstandard1.1\HelixToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="HelixToolkit.Wpf, Version=2.20.2.0, Culture=neutral, PublicKeyToken=52aa3500039caf0d, processorArchitecture=MSIL">
+      <HintPath>packages\HelixToolkit.Wpf.2.20.2\lib\net45\HelixToolkit.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2020\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2020\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Command.cs" />
+    <Compile Include="Form\3DView.cs" />
+    <Compile Include="Form\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\ShowAllParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ShowAllParameters.Designer.cs">
+      <DependentUpon>ShowAllParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TTD.02.01.frmFindReferringView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TTD.02.01.frmFindReferringView.Designer.cs">
+      <DependentUpon>TTD.02.01.frmFindReferringView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TTD.05.01.FrmListElements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TTD.05.01.FrmListElements.Designer.cs">
+      <DependentUpon>TTD.05.01.FrmListElements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TTD.05.02.frmGetValuePara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TTD.05.02.frmGetValuePara.Designer.cs">
+      <DependentUpon>TTD.05.02.frmGetValuePara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TTD.05.03.Descriptionform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TTD.05.03.Descriptionform.Designer.cs">
+      <DependentUpon>TTD.05.03.Descriptionform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TTD.05.05.Mailform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TTD.05.05.Mailform.Designer.cs">
+      <DependentUpon>TTD.05.05.Mailform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\ShowAllParameters.resx">
+      <DependentUpon>ShowAllParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TTD.02.01.frmFindReferringView.resx">
+      <DependentUpon>TTD.02.01.frmFindReferringView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TTD.05.01.FrmListElements.resx">
+      <DependentUpon>TTD.05.01.FrmListElements.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Form\Window1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
