@@ -20,9 +20,10 @@ Then, I calculate the cost estimate of that building.
 
 &nbsp;
 ### And software operates as below:
-- This is UI of Revit software. On this software, I built tools to get all element's information of building model.
+- This is UI of Revit software. I built add-in attaching to Autodesk Software.
+- I can interact with the building model, edit, create, delete information of every/all elements of the model.
 
-	<img src="https://github.com/kanechan25/bim5d_addin/blob/main/BIM_5D_addin.gif">
+<img src="https://github.com/kanechan25/bim5d_addin/blob/main/BIM_5D_addin.gif">
   
 - After that, upper tools export files such as json, csv, xlsx... 
 - I use them as meterials to go to <strong> bim5d software.</strong>
