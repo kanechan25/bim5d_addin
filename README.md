@@ -19,8 +19,7 @@ Then, I calculate the cost estimate of that building.
 <h3>This repo is BIM5D Add-in: </h3>
 
 &nbsp;
-
-## And software operates as below:
+### And software operates as below:
 - This is UI of Revit software. On this software, I built tools to get all element's information of building model.
 
 	<img src="https://github.com/kanechan25/bim5d_addin/blob/main/BIM_5D_addin.gif">
